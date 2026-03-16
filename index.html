@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/7569d96c0082aaa262d91bf1c7089f1cde70809a.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NaijaBelly - 100 Authentic Nigerian Dishes</title>
+    <title>NaijaBelly - 125 Authentic Nigerian Dishes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -59,18 +60,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center cursor-pointer" onclick="navigateTo('home')">
-                    <div class="w-12 h-12 bg-gradient-to-br from-terracotta to-deep-terracotta rounded-full flex items-center justify-center mr-3">
-                        <i class="fas fa-utensils text-white text-xl"></i>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mr-3 overflow-hidden border-2 border-terracotta">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.shutterstock.com/7569d96c0082aaa262d91bf1c7089f1cde70809a.jpg" alt="NaijaBelly Logo" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h1 class="font-display text-2xl font-bold text-earth-brown">Naija<span class="text-terracotta">Belly</span></h1>
-                        <p class="text-xs text-terracotta font-medium">100 Authentic Dishes</p>
+                        <p class="text-xs text-terracotta font-medium">125 Authentic Dishes</p>
                     </div>
                 </div>
 
                 <div class="hidden lg:flex items-center space-x-8">
                     <a onclick="navigateTo('home')" class="nav-link active text-earth-brown hover:text-terracotta font-medium" data-page="home">Home</a>
-                    <a onclick="navigateTo('menu')" class="nav-link text-earth-brown hover:text-terracotta font-medium" data-page="menu">Menu <span class="bg-terracotta text-white text-xs px-2 py-0.5 rounded-full">100</span></a>
+                    <a onclick="navigateTo('menu')" class="nav-link text-earth-brown hover:text-terracotta font-medium" data-page="menu">Menu <span class="bg-terracotta text-white text-xs px-2 py-0.5 rounded-full">125</span></a>
                     <a onclick="navigateTo('specials')" class="nav-link text-earth-brown hover:text-terracotta font-medium" data-page="specials">Specials</a>
                     <a onclick="navigateTo('about')" class="nav-link text-earth-brown hover:text-terracotta font-medium" data-page="about">Our Story</a>
                     <a onclick="navigateTo('contact')" class="nav-link text-earth-brown hover:text-terracotta font-medium" data-page="contact">Contact</a>
@@ -148,7 +149,7 @@
             <div class="relative z-20 text-center px-4 max-w-5xl mx-auto">
                 <div class="inline-flex items-center px-4 py-2 rounded-full bg-terracotta/20 backdrop-blur-md border border-terracotta/30 text-warm-cream mb-6">
                     <i class="fas fa-fire mr-2 text-orange-400"></i>
-                    <span class="font-medium">100 Authentic Nigerian Dishes</span>
+                    <span class="font-medium">125 Authentic Nigerian Dishes</span>
                 </div>
                 <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
                     Taste the Soul of <span class="text-transparent bg-clip-text bg-gradient-to-r from-terracotta to-yellow-400">Nigeria</span>
@@ -167,7 +168,7 @@
                     </button>
                 </div>
                 <div class="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-                    <div class="text-center"><p class="text-4xl font-bold text-terracotta">100+</p><p class="text-warm-cream/80 text-sm">Dishes</p></div>
+                    <div class="text-center"><p class="text-4xl font-bold text-terracotta">125+</p><p class="text-warm-cream/80 text-sm">Dishes</p></div>
                     <div class="text-center"><p class="text-4xl font-bold text-terracotta">30min</p><p class="text-warm-cream/80 text-sm">Delivery</p></div>
                     <div class="text-center"><p class="text-4xl font-bold text-terracotta">4.9★</p><p class="text-warm-cream/80 text-sm">Rating</p></div>
                 </div>
@@ -222,6 +223,20 @@
                     <h3 class="font-bold text-earth-brown">Snacks</h3>
                     <p class="text-sm text-gray-500">20 varieties</p>
                 </div>
+                <div onclick="navigateTo('menu'); setTimeout(() => filterCategory('drinks'), 100)" class="cursor-pointer bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all text-center group">
+                    <div class="w-16 h-16 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-terracotta transition-all">
+                        <i class="fas fa-glass-whiskey text-2xl text-terracotta group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-earth-brown">Drinks</h3>
+                    <p class="text-sm text-gray-500">15 varieties</p>
+                </div>
+                <div onclick="navigateTo('menu'); setTimeout(() => filterCategory('packs'), 100)" class="cursor-pointer bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all text-center group">
+                    <div class="w-16 h-16 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-terracotta transition-all">
+                        <i class="fas fa-shopping-bag text-2xl text-terracotta group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-earth-brown">Nylon & Packs</h3>
+                    <p class="text-sm text-gray-500">10 varieties</p>
+                </div>
             </div>
         </div>
 
@@ -258,13 +273,15 @@
         <div class="sticky top-20 bg-white/95 backdrop-blur-md shadow-sm z-30 py-4">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="flex flex-wrap justify-center gap-2" id="category-filters">
-                    <button onclick="filterCategory('all')" class="category-tab active px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="all">All (100)</button>
+                    <button onclick="filterCategory('all')" class="category-tab active px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="all">All (125)</button>
                     <button onclick="filterCategory('rice')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="rice">Rice (15)</button>
                     <button onclick="filterCategory('swallow')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="swallow">Swallows (12)</button>
                     <button onclick="filterCategory('soup')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="soup">Soups (18)</button>
-                    <button onclick="filterCategory('protein')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="protein">Proteins (20)</button>
-                    <button onclick="filterCategory('grill')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="grill">Grills (15)</button>
+                    <button onclick="filterCategory('protein')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="protein">Proteins (19)</button>
+                    <button onclick="filterCategory('grill')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="grill">Grills (13)</button>
                     <button onclick="filterCategory('snack')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="snack">Snacks (20)</button>
+                    <button onclick="filterCategory('drinks')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="drinks">Drinks (15)</button>
+                    <button onclick="filterCategory('packs')" class="category-tab px-4 py-2 rounded-full font-medium bg-gray-100 text-gray-700 hover:bg-terracotta hover:text-white text-sm" data-category="packs">Nylon & Packs (10)</button>
                 </div>
             </div>
         </div>
@@ -283,52 +300,151 @@
     <section id="specials" class="page-section pt-20">
         <div class="bg-gradient-to-br from-yellow-400 via-orange-400 to-terracotta py-16">
             <div class="max-w-7xl mx-auto px-4 text-center">
-                <span class="inline-block bg-white/20 px-4 py-1 rounded-full text-earth-brown font-medium mb-4">Limited Time</span>
+                <span class="inline-block bg-white/20 px-4 py-1 rounded-full text-earth-brown font-medium mb-4">Limited Time Offers</span>
                 <h1 class="font-display text-5xl font-bold text-earth-brown mb-4">Chef's Specials</h1>
+                <p class="text-earth-brown/80 text-xl">Exclusive combos and discounted packages</p>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 py-16">
+            <!-- Combo Deals -->
+            <h2 class="font-display text-3xl font-bold text-earth-brown mb-8 text-center">Special Combos</h2>
             <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-terracotta/20">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-terracotta/20 hover:shadow-2xl transition-all">
                     <div class="h-48 bg-gradient-to-br from-terracotta to-deep-terracotta flex items-center justify-center">
-                        <i class="fas fa-basket-shopping text-6xl text-white/30"></i>
+                        <i class="fas fa-utensils text-6xl text-white/30"></i>
                     </div>
                     <div class="p-6">
                         <span class="bg-red-500 text-white text-xs px-3 py-1 rounded-full font-bold">POPULAR</span>
                         <h3 class="font-display text-2xl font-bold text-earth-brown mt-2">Party Pack</h3>
+                        <p class="text-gray-500 text-sm mb-2">Feeds 4-6 people</p>
                         <p class="text-gray-400 line-through text-sm">₦15,000</p>
                         <p class="text-terracotta font-bold text-2xl">₦12,500</p>
                         <ul class="space-y-1 text-gray-600 text-sm my-4">
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>Jollof Rice (4 portions)</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>Grilled Chicken</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>Plantain (6 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Party Jollof Rice (4 portions)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Grilled Chicken (whole)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Fried Plantain (8 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Coleslaw Salad</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>4 Soft Drinks</li>
                         </ul>
                         <button onclick="addToCart('Party Pack Combo', 12500)" class="w-full btn-primary text-white font-bold py-3 rounded-xl">Add to Cart</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-green-500/20">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-green-500/20 hover:shadow-2xl transition-all">
                     <div class="h-48 bg-gradient-to-br from-nigeria-green to-palm-green flex items-center justify-center">
                         <i class="fas fa-leaf text-6xl text-white/30"></i>
                     </div>
                     <div class="p-6">
                         <span class="bg-nigeria-green text-white text-xs px-3 py-1 rounded-full font-bold">VEGETARIAN</span>
                         <h3 class="font-display text-2xl font-bold text-earth-brown mt-2">Village Special</h3>
+                        <p class="text-gray-500 text-sm mb-2">Traditional vegetarian feast</p>
                         <p class="text-gray-400 line-through text-sm">₦8,000</p>
                         <p class="text-terracotta font-bold text-2xl">₦6,500</p>
-                        <button onclick="addToCart('Village Special Combo', 6500)" class="w-full btn-primary text-white font-bold py-3 rounded-xl mt-4">Add to Cart</button>
+                        <ul class="space-y-1 text-gray-600 text-sm my-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Ofada Rice (2 portions)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Efo Riro Soup</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Plantain (4 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Beans (Ewa)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>2 Chapman Drinks</li>
+                        </ul>
+                        <button onclick="addToCart('Village Special Combo', 6500)" class="w-full btn-primary text-white font-bold py-3 rounded-xl">Add to Cart</button>
                     </div>
                 </div>
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-orange-500/20">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-orange-500/20 hover:shadow-2xl transition-all">
                     <div class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
                         <i class="fas fa-fire text-6xl text-white/30"></i>
                     </div>
                     <div class="p-6">
                         <span class="bg-orange-500 text-white text-xs px-3 py-1 rounded-full font-bold">SPICY</span>
                         <h3 class="font-display text-2xl font-bold text-earth-brown mt-2">Pepper Lover</h3>
+                        <p class="text-gray-500 text-sm mb-2">For spice enthusiasts</p>
                         <p class="text-gray-400 line-through text-sm">₦10,000</p>
                         <p class="text-terracotta font-bold text-2xl">₦8,500</p>
-                        <button onclick="addToCart('Pepper Lover Combo', 8500)" class="w-full btn-primary text-white font-bold py-3 rounded-xl mt-4">Add to Cart</button>
+                        <ul class="space-y-1 text-gray-600 text-sm my-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Asun (Spicy Goat)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Pepper Soup (Goat Meat)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Suya Platter</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Nkwobi</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>2 Zobo Drinks</li>
+                        </ul>
+                        <button onclick="addToCart('Pepper Lover Combo', 8500)" class="w-full btn-primary text-white font-bold py-3 rounded-xl">Add to Cart</button>
                     </div>
+                </div>
+            </div>
+
+            <!-- Family Deals -->
+            <h2 class="font-display text-3xl font-bold text-earth-brown mb-8 text-center">Family Deals</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-blue-500/20 hover:shadow-2xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-users text-6xl text-white/30"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-bold">FAMILY</span>
+                        <h3 class="font-display text-2xl font-bold text-earth-brown mt-2">Family Feast</h3>
+                        <p class="text-gray-500 text-sm mb-2">Feeds 6-8 people</p>
+                        <p class="text-gray-400 line-through text-sm">₦25,000</p>
+                        <p class="text-terracotta font-bold text-2xl">₦20,000</p>
+                        <ul class="space-y-1 text-gray-600 text-sm my-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Jollof Rice (6 portions)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Fried Rice (4 portions)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Grilled Chicken (2 whole)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Grilled Turkey (4 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Plantain (12 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Coleslaw & Salad</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>6 Soft Drinks</li>
+                        </ul>
+                        <button onclick="addToCart('Family Feast', 20000)" class="w-full btn-primary text-white font-bold py-3 rounded-xl">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-purple-500/20 hover:shadow-2xl transition-all">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+                        <i class="fas fa-heart text-6xl text-white/30"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="bg-purple-500 text-white text-xs px-3 py-1 rounded-full font-bold">COUPLE</span>
+                        <h3 class="font-display text-2xl font-bold text-earth-brown mt-2">Date Night Special</h3>
+                        <p class="text-gray-500 text-sm mb-2">Perfect for two</p>
+                        <p class="text-gray-400 line-through text-sm">₦12,000</p>
+                        <p class="text-terracotta font-bold text-2xl">₦9,500</p>
+                        <ul class="space-y-1 text-gray-600 text-sm my-4">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Coconut Rice (2 portions)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Grilled Fish (Croaker)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Prawns (6 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Plantain (4 pieces)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>2 Chapman Drinks</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Chocolate Cake (Slice)</li>
+                        </ul>
+                        <button onclick="addToCart('Date Night Special', 9500)" class="w-full btn-primary text-white font-bold py-3 rounded-xl">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weekly Specials -->
+            <h2 class="font-display text-3xl font-bold text-earth-brown mb-8 text-center">Weekly Specials</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-terracotta/10 to-terracotta/5 rounded-2xl p-6 text-center border border-terracotta/20">
+                    <span class="bg-terracotta text-white text-xs px-3 py-1 rounded-full">MON</span>
+                    <h4 class="font-bold text-earth-brown mt-3">Meat Pie Monday</h4>
+                    <p class="text-terracotta font-bold text-xl">₦600 <span class="text-gray-400 text-sm line-through">₦800</span></p>
+                    <p class="text-gray-500 text-sm mt-2">Buy 3, get 1 free</p>
+                </div>
+                <div class="bg-gradient-to-br from-nigeria-green/10 to-nigeria-green/5 rounded-2xl p-6 text-center border border-nigeria-green/20">
+                    <span class="bg-nigeria-green text-white text-xs px-3 py-1 rounded-full">WED</span>
+                    <h4 class="font-bold text-earth-brown mt-3">Swallow Wednesday</h4>
+                    <p class="text-terracotta font-bold text-xl">20% OFF</p>
+                    <p class="text-gray-500 text-sm mt-2">All swallow combos</p>
+                </div>
+                <div class="bg-gradient-to-br from-orange-500/10 to-orange-500/5 rounded-2xl p-6 text-center border border-orange-500/20">
+                    <span class="bg-orange-500 text-white text-xs px-3 py-1 rounded-full">FRI</span>
+                    <h4 class="font-bold text-earth-brown mt-3">Fish Friday</h4>
+                    <p class="text-terracotta font-bold text-xl">₦3,500 <span class="text-gray-400 text-sm line-through">₦4,500</span></p>
+                    <p class="text-gray-500 text-sm mt-2">Grilled fish + drink</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-500/10 to-purple-500/5 rounded-2xl p-6 text-center border border-purple-500/20">
+                    <span class="bg-purple-500 text-white text-xs px-3 py-1 rounded-full">SUN</span>
+                    <h4 class="font-bold text-earth-brown mt-3">Sunday Rice</h4>
+                    <p class="text-terracotta font-bold text-xl">₦2,000 <span class="text-gray-400 text-sm line-through">₦2,500</span></p>
+                    <p class="text-gray-500 text-sm mt-2">Jollof + chicken + drink</p>
                 </div>
             </div>
         </div>
@@ -444,7 +560,7 @@
                 </div>
             </div>
             <div class="border-t border-white/10 pt-8 text-center text-gray-400 text-sm">
-                <p>&copy; 2026 NaijaBelly. All rights reserved. | 100 Authentic Nigerian Dishes</p>
+                <p>&copy; 2026 NaijaBelly. All rights reserved. | 125 Authentic Nigerian Dishes</p>
             </div>
         </div>
     </footer>
@@ -457,7 +573,7 @@
             {id:1,name:"Party Jollof Rice",category:"rice",price:2500,image:"https://kimi-web-img.moonshot.cn/img/worldlytreat.com/a504be6403b520ca9c8135524d7b113c450cd414.jpg",desc:"Smoky firewood jollof with authentic taste",popular:true},
             {id:2,name:"Coconut Rice",category:"rice",price:3000,image:"https://kimi-web-img.moonshot.cn/img/cheflolaskitchen.com/6497908258a632e27ebdcc9d49421a18fc74c86f.webp",desc:"Fragrant rice in fresh coconut milk"},
             {id:3,name:"Fried Rice Special",category:"rice",price:2800,image:"https://kimi-web-img.moonshot.cn/img/sisijemimah.com/2b45f6b241f6a8908de05b246b27b339917e7951.jpg",desc:"Mixed vegetables with protein"},
-            {id:4,name:"Ofada Rice",category:"rice",price:2000,image:"https://kimi-web-img.moonshot.cn/img/www.yummymedley.com/31f094b3da73563791a483e9a1dac536119bbc3c.jpg",desc:"Local brown rice with Ofada sauce",popular:true},
+            {id:4,name:"Ofada Rice",category:"rice",price:2000,image:"https://kimi-web-img.moonshot.cn/img/www.9jafoodie.com/635033d819bf09784f5f307a0f18c0a6f5c09516.jpg",desc:"Local brown rice with Ofada sauce",popular:true},
             {id:5,name:"White Rice & Stew",category:"rice",price:2200,image:"https://kimi-web-img.moonshot.cn/img/www.yummymedley.com/5ea72359143f0c696442915f0d77f5adbde6456e.jpg",desc:"Steamed rice with rich tomato stew"},
             {id:6,name:"Banga Rice",category:"rice",price:3500,image:"https://kimi-web-img.moonshot.cn/img/www.bellanaijastyle.com/1838f48705a0b2e920d079eb7487826167311d27.jpeg",desc:"Palm nut infused Delta specialty"},
             {id:7,name:"Rice & Beans",category:"rice",price:2000,image:"https://kimi-web-img.moonshot.cn/img/cheflolaskitchen.com/9564ca66a96c127060ad88cec7f995c0a1fa49c6.webp",desc:"Perfect combination with stew"},
@@ -520,7 +636,6 @@
             {id:58,name:"Beef Stew",category:"protein",price:3000,image:"https://kimi-web-img.moonshot.cn/img/www.myactivekitchen.com/d013ea97baad48e5c400e28cf966b0739bee2645.jpg",desc:"Slow cooked beef chunks"},
             {id:59,name:"Shaki (Tripe)",category:"protein",price:1500,image:"https://kimi-web-img.moonshot.cn/img/mymeatshop-business.co.uk/a1e168915e6484eb810109aee670d84f0df013b2.jpg",desc:"Cleaned and peppered"},
             {id:60,name:"Pomo (Cow Skin)",category:"protein",price:1000,image:"https://kimi-web-img.moonshot.cn/img/www.thepretendchef.com/6b30939e0c78fb643cb5a1105e50ddd5f9bbd0b2.jpg",desc:"Spicy peppered skin"},
-            {id:61,name:"Bush Meat",category:"protein",price:5000,image:"https://kimi-web-img.moonshot.cn/img/www.thecable.ng/04daa01b0bb2c8d8809f72a93128c930a65a1a49.jpeg",desc:"Special order only"},
             {id:62,name:"Snail (Peppered)",category:"protein",price:6000,image:"https://kimi-web-img.moonshot.cn/img/lowcarbafrica.com/77d0ff936e527226607f8b4d6f533bd2704a687e.jpg",desc:"Large snails in sauce"},
             {id:63,name:"Crayfish (Dried)",category:"protein",price:1500,image:"https://kimi-web-img.moonshot.cn/img/afrilege.com/9da7794f9c91886616fdd44b86c18d35a2a1e085.jpg",desc:"Seasoning or snack"},
             {id:64,name:"Smoked Fish",category:"protein",price:2500,image:"https://kimi-web-img.moonshot.cn/img/felixabeshop.com/89399748c2f18b7045975cc9c9c474a916a084b2.jpg",desc:"Traditional smoked"},
@@ -530,7 +645,6 @@
             {id:66,name:"Suya Platter",category:"grill",price:5000,image:"https://kimi-web-img.moonshot.cn/img/cheflolaskitchen.com/0e898144a1d53abe474954de806766269d86d13d.webp",desc:"Beef, chicken, kidney mix",popular:true},
             {id:67,name:"Suya (Beef Only)",category:"grill",price:2000,image:"https://kimi-web-img.moonshot.cn/img/cheflolaskitchen.com/43a4650e67bd8438b627ef7ece1681393c66a219.webp",desc:"10 spicy skewers"},
             {id:68,name:"Suya (Chicken)",category:"grill",price:2500,image:"https://kimi-web-img.moonshot.cn/img/sisijemimah.com/4a120f05ee479b52d29e5174a0efe90caeaa27a7.jpg",desc:"8 chicken skewers"},
-            {id:69,name:"Suya (Gizzard)",category:"grill",price:2000,image:"https://kimi-web-img.moonshot.cn/img/www.chefspencil.com/3a1a55e96a200bcbfca03ebc25718e30a5675a0d.jpg",desc:"Spicy gizzard skewers"},
             {id:70,name:"Suya (Kidney)",category:"grill",price:2500,image:"https://kimi-web-img.moonshot.cn/img/afrosuyapalace.com/2c401199114f1e7d3c89b2391e39e26cc88162a9.jpeg",desc:"Lamb kidney specialty"},
             {id:71,name:"Asun (Spicy Goat)",category:"grill",price:4000,image:"https://kimi-web-img.moonshot.cn/img/cookingwithclaudy.com/f32839935897ef6a11b5662c21ce3669ffdd9634.jpg",desc:"Cubed peppered goat"},
             {id:72,name:"Nkwobi",category:"grill",price:3500,image:"https://kimi-web-img.moonshot.cn/img/www.mydiasporakitchen.com/d945e9dbe2f9eee2a2ce5634bc092ee20702a8d5.jpg",desc:"Cow foot palm oil delicacy"},
@@ -538,7 +652,6 @@
             {id:74,name:"Boli (Roasted Plantain)",category:"grill",price:1000,image:"https://kimi-web-img.moonshot.cn/img/proveg.org/34bab8167a4d7f3805a014dcca6c11f5023800d3.jpg",desc:"Street style roasted"},
             {id:75,name:"Boli & Groundnut",category:"grill",price:1500,image:"https://kimi-web-img.moonshot.cn/img/nigeriancookbooks.com/095b2ac04ad78107b20c5ad368441f912e0d262f.jpg",desc:"With spicy peanuts"},
             {id:76,name:"Roasted Corn",category:"grill",price:500,image:"https://kimi-web-img.moonshot.cn/img/rexclarkeadventures.com/1aa398111cb4022acd1b8573ed5d741211adf930.jpg",desc:"Street style roasted"},
-            {id:77,name:"Corn & Pear",category:"grill",price:1500,image:"https://kimi-web-img.moonshot.cn/img/www.myburntorange.com/780d63a082b767cfe83232db299c652228f0f7a2.jpg",desc:"With ube (African pear)"},
             {id:78,name:"Grilled Plantain",category:"grill",price:1500,image:"https://kimi-web-img.moonshot.cn/img/simshomekitchen.com/b7ed2f5ebce294f28624c56cc2b74c4be9a68802.jpg",desc:"Sweet ripe plantain"},
             {id:79,name:"Grilled Yam",category:"grill",price:2000,image:"https://kimi-web-img.moonshot.cn/img/rexclarkeadventures.com/c28aa51a463806ff53aeb5d20aa31bcbc116c3fe.jpg",desc:"With palm oil sauce"},
             {id:80,name:"Barbecue Ribs",category:"grill",price:6000,image:"https://kimi-web-img.moonshot.cn/img/cheflolaskitchen.com/6135c66d1f35f1525c94cd06c4c4461002568620.webp",desc:"Nigerian spiced BBQ"},
@@ -563,7 +676,34 @@
             {id:97,name:"Coconut Candy",category:"snack",price:800,image:"https://kimi-web-img.moonshot.cn/img/www.yummymedley.com/e2d243e77b44695bf97cd48b375179e1e2a7335d.jpg",desc:"Sweet coconut bites"},
             {id:98,name:"Kuli Kuli",category:"snack",price:600,image:"https://kimi-web-img.moonshot.cn/img/cdn.shopify.com/08e363785ec86024dda3c7cdb7813aa45eca3b5e.jpg",desc:"Groundnut snack Northern"},
             {id:99,name:"Kokoro",category:"snack",price:500,image:"https://kimi-web-img.moonshot.cn/img/proveg.org/542f564d66f8c8c49fece99afb35b1304292a5d7.png",desc:"Crunchy corn snack"},
-            {id:100,name:"Plantain Chips",category:"snack",price:1000,image:"https://kimi-web-img.moonshot.cn/img/www.9jafoodie.com/be40cc53b2dfc5780959e77953fe13162fc773fb.jpg",desc:"Sweet or salty 100g"}
+            {id:100,name:"Plantain Chips",category:"snack",price:1000,image:"https://kimi-web-img.moonshot.cn/img/www.9jafoodie.com/be40cc53b2dfc5780959e77953fe13162fc773fb.jpg",desc:"Sweet or salty 100g"},
+            // DRINKS (101-115)
+            {id:101,name:"Chapman",category:"drinks",price:1500,image:"https://kimi-web-img.moonshot.cn/img/www.yummymedley.com/d19257a6f4ef9c90ad1ea2f416debd650829a244.jpg",desc:"Nigerian mocktail with cucumber and citrus"},
+            {id:102,name:"Zobo Drink",category:"drinks",price:800,image:"https://kimi-web-img.moonshot.cn/img/proveg.org/f51760ff9270526872c68c262d32b18c53110449.jpg",desc:"Hibiscus flower drink, chilled"},
+            {id:103,name:"Malta Guinness",category:"drinks",price:1000,image:"https://kimi-web-img.moonshot.cn/img/drinkmalt.com/374bb65035b5aa0ffe2c798c94f236a070a17df7.webp",desc:"Non-alcoholic malt drink"},
+            {id:104,name:"Fura da Nono",category:"drinks",price:1200,image:"https://kimi-web-img.moonshot.cn/img/img-global.cpcdn.com/83f1659553efde9b8ac3eafd022a5340afcefee4.jpg",desc:"Millet balls with fermented milk"},
+            {id:105,name:"Tiger Nut Milk (Kunu Aya)",category:"drinks",price:1000,image:"https://kimi-web-img.moonshot.cn/img/proveg.org/180f52da4b8a9f834282beedad3ca5a2f4d9010f.jpg",desc:"Sweet creamy tiger nut drink"},
+            {id:106,name:"Fresh Orange Juice",category:"drinks",price:1500,image:"https://kimi-web-img.moonshot.cn/img/naijahome.food/7d1da23dbcb5c28d2e566d238d9edcb435aa0145.jpg",desc:"Freshly squeezed oranges"},
+            {id:107,name:"Palm Wine",category:"drinks",price:2000,image:"https://kimi-web-img.moonshot.cn/img/olateeafricanmart.com/e3ff015ed9df19edee2d9dc6dba4fe1efd531d11.jpg",desc:"Traditional palm wine"},
+            {id:108,name:"Bottled Water",category:"drinks",price:300,image:"https://kimi-web-img.moonshot.cn/img/www.nestlepurelife.com/6066c74e222d81e4a4e97fb09dd8538cd812c305.webp",desc:"Pure drinking water 50cl"},
+            {id:109,name:"Yoghurt Drink",category:"drinks",price:800,image:"https://kimi-web-img.moonshot.cn/img/www.supermart.ng/3fd8307e8e3e3de945185ec0df63b63620c670bb.jpg",desc:"Sweetened yoghurt drink"},
+            {id:110,name:"Soft Drinks",category:"drinks",price:500,image:"https://kimi-web-img.moonshot.cn/img/nairametrics.com/0b6b8679bc9d64192736ceaeeadcf96b52bd8dcb.jpg",desc:"Coca-Cola, Sprite, Fanta"},
+            {id:111,name:"Kunu (Millet Drink)",category:"drinks",price:800,image:"https://kimi-web-img.moonshot.cn/img/www.9jafoodie.com/d92407515a792c9537b2e75189b29e1196d5ec9c.jpg",desc:"Traditional millet drink"},
+            {id:112,name:"Soy Milk",category:"drinks",price:1000,image:"https://kimi-web-img.moonshot.cn/img/www.9jafoodie.com/d92407515a792c9537b2e75189b29e1196d5ec9c.jpg",desc:"Fresh soy milk"},
+            {id:113,name:"Fruit Juice (Mixed)",category:"drinks",price:1200,image:"https://kimi-web-img.moonshot.cn/img/bestnigerianfoodinkigali.com/3c4853d0c85aa8b3adaab19be0c34bcd24e12e94.jpg",desc:"Mixed fruit juice"},
+            {id:114,name:"Ginger Drink",category:"drinks",price:800,image:"https://kimi-web-img.moonshot.cn/img/proveg.org/f51760ff9270526872c68c262d32b18c53110449.jpg",desc:"Spicy ginger drink"},
+            {id:115,name:"Lemonade",category:"drinks",price:1000,image:"https://kimi-web-img.moonshot.cn/img/naijahome.food/7d1da23dbcb5c28d2e566d238d9edcb435aa0145.jpg",desc:"Fresh lemonade"},
+            // NYLON & PACKS (116-125)
+            {id:116,name:"Food Takeaway Pack (Small)",category:"packs",price:100,image:"https://kimi-web-img.moonshot.cn/img/businesspost.ng/3adf768f4a92b4a96ea869c7b2c7ac1520b0b010.jpg",desc:"Disposable foam pack for swallow"},
+            {id:117,name:"Food Takeaway Pack (Large)",category:"packs",price:150,image:"https://kimi-web-img.moonshot.cn/img/mmo.aiircdn.com/5d583c21e667c8dd3dceac117fe6883b7dacc1e3.jpg",desc:"Large disposable pack for rice"},
+            {id:118,name:"Packaging Nylon (Small)",category:"packs",price:50,image:"https://kimi-web-img.moonshot.cn/img/pictures-nigeria.jijistatic.net/65e5a0b387f397572cb8b81a16599f883895a942.webp",desc:"Small nylon for snacks"},
+            {id:119,name:"Packaging Nylon (Large)",category:"packs",price:100,image:"https://kimi-web-img.moonshot.cn/img/cdn.rehmie.com.ng/e46f9f2661c8d33b449c5da853244cd62ebffcd5.jpg",desc:"Large nylon for food items"},
+            {id:120,name:"Cooler Bag",category:"packs",price:2500,image:"https://kimi-web-img.moonshot.cn/img/m.media-amazon.com/8578d1a815bcc1d455319a6b157f6e17f2ab1610.jpg",desc:"Insulated bag for food delivery"},
+            {id:121,name:"Aluminum Foil Pack",category:"packs",price:200,image:"https://kimi-web-img.moonshot.cn/img/businesspost.ng/3adf768f4a92b4a96ea869c7b2c7ac1520b0b010.jpg",desc:"Foil pack for hot foods"},
+            {id:122,name:"Paper Bag (Small)",category:"packs",price:30,image:"https://kimi-web-img.moonshot.cn/img/cdn.rehmie.com.ng/e46f9f2661c8d33b449c5da853244cd62ebffcd5.jpg",desc:"Small paper bag"},
+            {id:123,name:"Paper Bag (Large)",category:"packs",price:50,image:"https://kimi-web-img.moonshot.cn/img/cdn.rehmie.com.ng/e46f9f2661c8d33b449c5da853244cd62ebffcd5.jpg",desc:"Large paper bag"},
+            {id:124,name:"Plastic Container",category:"packs",price:300,image:"https://kimi-web-img.moonshot.cn/img/mmo.aiircdn.com/5d583c21e667c8dd3dceac117fe6883b7dacc1e3.jpg",desc:"Reusable plastic container"},
+            {id:125,name:"Soup Bowl with Lid",category:"packs",price:150,image:"https://kimi-web-img.moonshot.cn/img/businesspost.ng/3adf768f4a92b4a96ea869c7b2c7ac1520b0b010.jpg",desc:"Bowl for soups and stews"}
         ];
 
         // ==================== STATE MANAGEMENT ====================
