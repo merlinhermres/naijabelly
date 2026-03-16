@@ -728,7 +728,12 @@
             return `
                 <div class="food-card bg-white rounded-2xl shadow-lg overflow-hidden group">
                     <div class="relative h-48 overflow-hidden">
-                        <img src="${item.image}" alt="${item.name}" class="food-image w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x300/E07B39/FFFFFF?text=${encodeURIComponent(item.name)}'">
+                       <img 
+src="https://source.unsplash.com/600x400/?nigerian,${encodeURIComponent(item.name)}"
+alt="${item.name}"
+class="food-image w-full h-full object-cover"
+onerror="this.src='https://via.placeholder.com/400x300/E07B39/FFFFFF?text=${encodeURIComponent(item.name)}'"
+> onerror="this.src='https://via.placeholder.com/400x300/E07B39/FFFFFF?text=${encodeURIComponent(item.name)}'">
                         ${item.popular ? '<span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-bold">POPULAR</span>' : ''}
                         <button onclick="addToCart('${item.name}', ${item.price})" class="absolute bottom-3 right-3 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-terracotta hover:bg-terracotta hover:text-white transition-all transform translate-y-16 group-hover:translate-y-0">
                             <i class="fas fa-plus"></i>
